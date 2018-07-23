@@ -1,0 +1,23 @@
+<RCC>
+<qresource prefix = "/">
+  <file alias = "cherry">data/cherry.jpg</file>
+  <file alias = "cat">data/cat.jpg</file>
+  <file alias = "smile">data/smile.jpg</file>
+  <file alias = "horse">data/horse.jpg</file>
+  <file alias = "sheet">data/sheet.jpg</file>
+  <file alias = "tree">data/tree.jpg</file>
+  <file alias = "potato">data/potato.jpg</file>
+  <file alias = "cloud">data/cloud.jpg</file>
+  <file alias = "default">data/void.jpg</file>
+  <file alias = "dinozaur">data/dinozaur.jpg</file>
+  <file alias = "skull">data/skull.jpg</file>
+  <file alias = "spider">data/spider.jpg</file>
+  <file alias = "pokemon">data/pokemon.jpg</file>
+  <file alias = "nerpa">data/nerpa.jpg</file>
+  <file alias = "pumkin">data/pumkin.jpg</file>
+  <file alias = "bird">data/bird.jpg</file>
+  <file alias = "brain">data/brain.jpg</file>
+  <file alias = "mario">data/mario.jpg</file>
+  <file alias = "batman">data/batman.jpg</file>
+</qresource>
+</RCC>
