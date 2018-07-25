@@ -50,14 +50,15 @@ Card *Concentration::create_card(const QString &str) const {
       ":/cherry", ":/cat",   ":/smile", ":/horse",    ":/brain",  ":/pokemon",
       ":/bird",   ":/nerpa", ":/mario", ":/dinozaur", ":/sheet",  ":/tree",
       ":/potato", ":/cloud", ":/skull", ":/batman",   ":/pumkin", ":/spider"};
+  for (int i = pack.size() - 1; i >= 0; --i) {
+    pack.push_back(pack[i]);
+  }
   std::random_device rd;
   std::default_random_engine gen{rd()};
-  for (int j{}; j < 2; ++j) {
-    for (int i = pack.size() - 1; i > -1; --i) {
-      std::uniform_int_distribution<int> dist{0, i};
-      ::swap(pack[dist(gen)], pack[i]);
-      retvalue.push(pack[i]);
-    }
+  for (int i = pack.size() - 1; i > -1; --i) {
+    std::uniform_int_distribution<int> dist{0, i};
+    ::swap(pack[dist(gen)], pack[i]);
+    retvalue.push(pack[i]);
   }
 
   return retvalue;
